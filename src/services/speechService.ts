@@ -123,7 +123,7 @@ class SpeechService {
         } else if (event.error === 'no-speech') {
           msg = 'No speech was detected. Please try speaking again or type your sentence.';
         } else if (event.error === 'network') {
-          msg = 'Network connection issue with speech recognition. You can type your sentence.';
+          msg = "Voice recognition isn't available in this browser right now. You can type your sentence instead.";
         }
         onError(msg);
       };
