@@ -1,0 +1,6 @@
+{
+  "name": "Vocab Voice Coach",
+  "description": "Mobile-first English vocabulary learning coach with voice interaction, speech synthesis, real-time language feedback, streaks, and progress tracking.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

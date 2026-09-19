@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #0B749C;
+  --color-brand-blue-hover: #085a79;
+  --color-brand-teal: #1FBAC0;
+  --color-brand-mint: #61D3AB;
+  --color-brand-green: #9CEE8D;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(31, 186, 192, 0.7);
+  }
+  70% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 16px rgba(31, 186, 192, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(31, 186, 192, 0);
+  }
+}
+
+.animate-mic-pulse {
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
