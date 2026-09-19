@@ -1,20 +1,76 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Vocab Voice Coach
 
-# Run and deploy your AI Studio app
+A voice-first English vocabulary and speaking practice prototype designed to help learners build practical vocabulary and use it naturally in real-world situations.
 
-This contains everything you need to run your app locally.
+## Live Demo
 
-View your app in AI Studio: https://ai.studio/apps/2b86753f-1c8a-4bc1-b0c4-9783e1af30aa
+https://vocab-voice-coach.vercel.app
 
-## Run Locally
+## What it does
 
-**Prerequisites:**  Node.js
+Vocab Voice Coach combines vocabulary learning with short speaking exercises.
 
+Users can:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- Browse vocabulary by difficulty and situation
+- Learn definitions, pronunciation and example usage
+- Practice using target words in realistic situations
+- Speak their answer or type it
+- Receive qualitative coaching such as:
+  - Correct
+  - Almost there
+  - Needs another try
+- Get progressive clues instead of only receiving a score
+- Track vocabulary mastery and practice activity
+- Review words that need more practice
+
+## Product Approach
+
+The prototype intentionally avoids treating English learning as a simple numerical scoring problem.
+
+Instead, it focuses on:
+
+- Independent usage
+- Repeated practice
+- Context relevance
+- Progressive coaching
+- Vocabulary mastery over time
+
+XP represents learning activity and independence rather than English proficiency.
+
+## Key Learning Loop
+
+Learn → Practice → Get Coaching → Try Again → Build Mastery
+
+## Voice Practice
+
+The prototype uses the browser's Web Speech API for speech recognition where supported.
+
+If voice recognition is unavailable in the browser, users can continue the exercise by typing their response.
+
+## Tech Stack
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide React
+- Web Speech API
+- Local browser storage
+- Supabase integration structure
+
+## Project Structure
+
+```text
+src/
+├── components/
+├── data/
+├── services/
+├── utils/
+├── views/
+├── App.tsx
+├── main.tsx
+└── types.ts
+
+supabase/
+└── schema.sql
